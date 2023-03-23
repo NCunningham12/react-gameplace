@@ -1,28 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from './Button';
 import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  window.addEventListener('resize', showButton);
-
-  useEffect(() => {
-    showButton();
-  }, []);
 
   return (
     <>
@@ -41,7 +25,7 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Home
+                Store
               </Link>
             </li>
             <li className="nav-item">
@@ -51,51 +35,35 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/contact"
+                to="/support"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Contact
+                Support
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/mens-club"
+                to="/sign-in"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Men's Club
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/travel-club"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Travel Club
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/pro-shop"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Pro Shop
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/sign-up"
-                className="nav-links-mobile"
-                onClick={closeMobileMenu}
-              >
-                Sign Up
+                Sign-In
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+          <div className="icons">
+            <div className="cart-icon">
+              <Link className='cart' to='/cart'>
+                <i className='fa fa-cart-arrow-down' />
+              </Link>
+            </div>
+            <div className="magnify">
+              <Link className='search' to='/search'>
+                <i className="fab fa-searchengin" />
+              </Link>
+            </div>
+          </div>
         </div>
       </nav>
     </>
