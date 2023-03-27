@@ -1,10 +1,11 @@
 import React from 'react';
-import Carousel from '../components/Carousel';
+import Slider from '../components/Slider.js';
+import SliderImages from '../components/SliderImages.js';
 
 function Home() {
   return (
     <>
-      <Carousel />
+      <Slider slides={SliderImages} />
     </>
   );
 }
