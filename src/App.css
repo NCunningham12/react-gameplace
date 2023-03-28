@@ -2,3 +2,10 @@
   margin: 0;
   padding: 0;
 }
+
+.store {
+  font-size: 72px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
