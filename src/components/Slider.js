@@ -83,9 +83,10 @@ const Slider = () => {
     });
 
     // Slide 3 (Link)
-    slide3.addEventListener('click', () => {
+    document.querySelector('.slider-image-3').addEventListener('click', () => {
       window.location.href = '/store';
     });
+
   };
 
   return (

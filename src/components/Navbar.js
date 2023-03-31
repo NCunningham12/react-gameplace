@@ -55,12 +55,12 @@ function Navbar() {
           <div className="icons">
             <div className="cart-icon">
               <Link className='cart' to='/cart'>
-                <i className='fa fa-cart-arrow-down' />
+                <i className='fas fa-shopping-cart' />
               </Link>
             </div>
             <div className="magnify">
               <Link className='search' to='/search'>
-                <i className="fab fa-searchengin" />
+                <i className="fas fa-search" />
               </Link>
             </div>
           </div>
