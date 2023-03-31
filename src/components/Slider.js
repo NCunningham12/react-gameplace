@@ -81,12 +81,11 @@ const Slider = () => {
       slide5.classList.remove('slider-image-5');
       slide5.classList.add('slider-image-3');
     });
-    
+
     // Slide 3 (Link)
     slide3.addEventListener('click', () => {
-      window.location.href = '/store'
-    })
-
+      window.location.href = '/store';
+    });
   };
 
   return (
