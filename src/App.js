@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home.js'
 import Store from './pages/Store';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='/' Component={Home} />
           <Route path='/store' Component={Store} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

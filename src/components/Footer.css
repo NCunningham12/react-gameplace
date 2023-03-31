@@ -1,0 +1,162 @@
+.footer-container {
+  background: #000;
+  color: #fff;
+}
+
+.top-bar-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(128, 128, 128);
+  padding: 1.5rem 25rem;
+  justify-content: flex-start;
+}
+
+.top-bar-link {
+  color: #d4d4d4;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.top-bar-link:hover {
+  color: #fff;
+}
+
+.socials {
+  display: flex;
+  justify-self: flex-end;
+  position: absolute;
+  right: 30%;
+}
+
+.social {
+  color: #d4d4d4;
+  padding: 0 5px;
+  font-size: 25px;
+}
+
+.social:hover {
+  color: #fff;
+}
+
+.mid-bar-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(107, 107, 107);
+  padding: 1.5rem 25rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mid-bar-logo {
+  display: flex;
+  height: 40px;
+  margin: 0;
+}
+
+.mid-bar-links-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+  padding: 0.5rem;
+}
+
+.language-wrapper {
+  margin-bottom: 10px;
+}
+
+.language {
+  flex-direction: row;
+  color: #d4d4d4;
+  text-decoration: none;
+  padding: 0 5px;  
+}
+
+.language:hover {
+  color: #fff;
+}
+
+.language:active {
+  color: red;
+}
+
+.currency {
+  flex-direction: row;
+  color: #d4d4d4;
+  text-decoration: none;
+  padding: 0 5px;  
+}
+
+.currency:hover {
+  color: #fff;
+}
+
+.active {
+  color: red;
+}
+
+.bottom-bar-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgb(128, 128, 128);
+  padding: 1.5rem 25rem;
+  justify-content: center;
+}
+
+.bottom-bar-links-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+
+.bottom-bar-link {
+  flex-direction: row;
+  color: #d4d4d4;
+  text-decoration: none;
+  font-size: 12px;
+  padding-right: 15px;
+}
+
+.bottom-bar-link:hover {
+  color: #fff;
+}
+
+.copyrights {
+  font-size: 12px;
+  color: #d4d4d4;
+}
+
+@media screen and (max-width: 1490px) {
+  .top-bar {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .top-bar-container {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  .socials {
+    display: flex;
+    position: inherit;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .mid-bar-container {
+    padding: 2rem;
+  }
+
+  .bottom-bar-container {
+    padding: 2rem;
+  }
+
+  .social-media-wrap {
+    flex-direction: column;
+  }
+}
