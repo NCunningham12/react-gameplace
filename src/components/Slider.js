@@ -10,6 +10,20 @@ const Slider = () => {
     const slide4 = document.querySelector('.slider-image-4');
     const slide5 = document.querySelector('.slider-image-5');
 
+    const sliderContainer = document.querySelector('.slider-inner-container');
+
+    function divPicker(event) {
+      if (!event.target.classList.contains('slider-image-3')) {
+        console.log('its here');
+      } else {
+        window.location.href = '/store';
+      }
+    }
+
+    sliderContainer.addEventListener('click', divPicker, true);
+
+    sliderContainer.removeEventListener('click', divPicker);
+
     // Slide 1
     slide1.addEventListener('click', () => {
       slide1.classList.remove('slider-image-1');
@@ -83,10 +97,6 @@ const Slider = () => {
     });
 
     // Slide 3 (Link)
-    document.querySelector('.slider-image-3').addEventListener('click', () => {
-      window.location.href = '/store';
-    });
-
   };
 
   return (
