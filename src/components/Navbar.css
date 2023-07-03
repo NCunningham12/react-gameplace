@@ -77,6 +77,21 @@
   text-decoration: none;
 }
 
+.badge {
+  display: flex;
+  position: relative;
+  right: 18px;
+  top: -7px;
+  background-color: red;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #fff;
+}
+
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;

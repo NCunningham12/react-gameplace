@@ -2,7 +2,7 @@ import React from 'react';
 import CardItem from './CardItem';
 import './Cards.css';
 
-const Cards = () => {
+const Cards = (props) => {
   return (
     <div className="cards">
       <h1>Great Deals</h1>

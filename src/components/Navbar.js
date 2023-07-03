@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-function Navbar() {
+function Navbar({ size }) {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -58,6 +58,7 @@ function Navbar() {
                 <i className='fas fa-shopping-cart' />
               </Link>
             </div>
+            <div className="badge">{size}</div>
             <div className="magnify">
               <Link className='search' to='/search'>
                 <i className="fas fa-search" />
